@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Activity3</string>
+    <string name="labelapp">Pendaftaran</string>
+    <string name="un">Username</string>
+    <string name="em">Email</string>
+    <string name="tl">Telephone</string>
+    <string name="btn">Sign-In</string>
+    <string name="ps">Password</string>
+    <string name="hsl">Ini Tampilan Hasil</string>
+    <string name="masukan_Username">Masukan Username</string>
+    <string name="masukan_Password">Masukan Password</string>
+    <string name="masukkan_Email">Masukan Email</string>
+    <string name="masukan_Nomor">Masukan Nomer Telp</string>
+</resources>
