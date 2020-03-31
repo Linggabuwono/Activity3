@@ -2,6 +2,7 @@ package com.example.activity3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.widget.PopupMenu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button submit;
     EditText Nama, Mail, Telephone, Password;
-    TextView menu1, menu2, menu3;
+
 
 
     @Override
@@ -29,9 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Nama = findViewById(R.id.editUN);
         Password = findViewById(R.id.editPass);
 
-        menu1 = findViewById(R.id.menu1);
-        menu2 = findViewById(R.id.menu2);
-        menu3 = findViewById(R.id.menu3);
+
 
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -53,18 +52,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public boolean onCharacterOptionsMenu (Menu menu) {
+    public boolean onCreateOptionsMenu (Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.optionmenu, menu);
         return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.menu1){
+            if (item.getItemId() == R.id.A){
             startActivity(new Intent(this, Menu1.class));
-        }else if (item.getItemId() == R.id.menu2){
+        }else if (item.getItemId() == R.id.B){
             startActivity(new Intent(this, Menu2.class));
-        }else if (item.getItemId() == R.id.menu3){
+        }else if (item.getItemId() == R.id.C){
             startActivity(new Intent(this, Menu3.class));
         }
         return true;
